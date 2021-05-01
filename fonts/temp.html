@@ -1,0 +1,10695 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="UTF-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    
+        <link rel="shortcut icon" href="./img/favicon.png"/>
+    
+    
+        <style>
+@import url('https://fonts.googleapis.com/css?family=Lato:700,400');
+.anima-component-wrapper a,
+.anima-screen a {
+    text-decoration: none;
+    display: contents;
+}
+
+
+
+.anima-full-width-a {
+    width: 100%;
+}
+
+.anima-full-height-a {
+    height: 100%;
+}
+
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+    outline: none;
+}
+
+.anima-screen *,
+.anima-component-wrapper *{
+    box-sizing: border-box;
+}
+
+.anima-screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.anima-container-center-vertical {
+    align-items: center;
+    height: 100%;
+}
+
+.anima-container-center-horizontal {
+    justify-content: center;
+    width: 100%;
+}
+
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+    pointer-events: auto;
+    flex-shrink: 0;
+}
+
+.anima-component-wrapper,
+.anima-screen {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.anima-auto-animated div {
+    opacity: 0;
+    position: absolute;
+    --anima-z-index: -1;
+}
+
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+    opacity: 1;
+}
+
+.anima-overlay {
+position: absolute;
+opacity: 0;
+display: none;
+top: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+.anima-animate-appear {
+    opacity: 0;
+    display: block;
+    animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+
+.anima-animate-disappear {
+    opacity: 1;
+    display: block;
+    animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+
+.anima-animate-nodelay {
+    animation-delay: 0s;
+}
+
+@keyframes anima-reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.align-self-flex-start {
+    align-self: flex-start;
+}
+.align-self-flex-end {
+    align-self: flex-end;
+}
+.align-self-flex-center {
+    align-self: center;
+}
+.anima-valign-text-middle {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.anima-valign-text-bottom {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+    pointer-events: none;
+}
+
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+    pointer-events: auto;
+}
+
+.anima-hidden,
+.anima-hidden * {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+    visibility: hidden !important;
+}
+
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+    cursor: pointer;
+}
+
+/* screen - artboard */
+
+.artboard {
+  background-color: rgba(255,255,255,1.0);
+  height: 1077px;
+  position: relative;
+  width: 926px;
+}
+.artboard .abc-VwwPST {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 46px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .american-b--logo-copy-xtW6tn {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 53px;
+  margin-left: 36px;
+  margin-top: 2px;
+  position: relative;
+  width: 54px;
+}
+.artboard .as-seen-in-xtW6tn {
+  background-color: transparent;
+  color: rgba(0,0,0,1.0);
+  flex-shrink: 0;
+  font-family: "AvenirNextCondensed-Regular", Helvetica, Arial, serif;
+  font-size: 32px;
+  height: auto;
+  letter-spacing: -1.10px;
+  line-height: 14px;
+  margin-top: 6px;
+  min-height: 32px;
+  min-width: 113px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}
+.artboard .auto-flex-DtJxMe {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 110px;
+}
+.artboard .auto-flex-TgQWgN {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 110px;
+}
+.artboard .auto-flex-gIzkNM {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 110px;
+}
+.artboard .auto-flex-rHkB1E {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-left: 2.15px;
+  min-width: 153px;
+  position: relative;
+  width: auto;
+}
+.artboard .auto-flex-tkOJX1 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 110px;
+}
+.artboard .auto-flex-udd6xU {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 19px;
+  justify-content: flex-start;
+  margin-left: 1.0px;
+  margin-top: 3px;
+  min-width: 41px;
+  position: relative;
+  width: auto;
+}
+.artboard .auto-flex1-JGtnxX {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  min-width: 101px;
+  position: relative;
+  width: auto;
+}
+.artboard .auto-flex1-LLqu42 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 111px;
+}
+.artboard .auto-flex1-QqpZAK {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 110px;
+}
+.artboard .auto-flex1-i6OEDt {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  min-height: 42px;
+  position: relative;
+  width: 110px;
+}
+.artboard .buildsection-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 8px;
+  min-height: 376px;
+  position: absolute;
+  top: 100px;
+  width: 910px;
+}
+.artboard .business-insider-zaIrUd {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 132px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .button-ZdCe8m {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(./artboard-bg-35F3D7B1-9ED3-4F23-958A-898D9B1948DB@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 71px;
+  justify-content: flex-end;
+  min-width: 248px;
+  padding: 23px 29.8px;
+  position: relative;
+  width: auto;
+}
+.artboard .button-alternative-ohgdsz {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 71px;
+  justify-content: flex-start;
+  left: 406px;
+  min-width: 248px;
+  position: absolute;
+  top: -10px;
+  width: auto;
+}
+.artboard .button-text-2eU7uO {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-bottom: 2.0px;
+  margin-left: 5px;
+  min-height: 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 144px;
+}
+.artboard .button-text-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 312px;
+  position: absolute;
+  text-align: center;
+  top: 673px;
+  white-space: nowrap;
+  width: 301px;
+}
+.artboard .button-text-DfXRl2 {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 31px;
+  min-height: 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 301px;
+}
+.artboard .button-text-HEBjiI {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-bottom: 2.0px;
+  margin-left: 2px;
+  min-height: 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 65px;
+}
+.artboard .button-text-JR0iyY {
+  background-color: transparent;
+  height: auto;
+  left: 242px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+  width: 138px;
+}
+.artboard .button-text-Kgt1o2 {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-bottom: 2.0px;
+  margin-left: 2px;
+  min-height: 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 104px;
+}
+.artboard .button-text-YCQTN0 {
+  background-color: transparent;
+  height: auto;
+  left: 8px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+  width: 176px;
+}
+.artboard .button-text-sAOPyR {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 5px;
+  min-height: 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 62px;
+}
+.artboard .buzz-feed-8TPFgI {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 84px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .card-copy-LczXgX {
+  background-color: transparent;
+  border: 1px solid rgba(237,237,237,1.0);
+  border-radius: 4px;
+  height: 38px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 545px;
+}
+.artboard .cbs-5fIfyM {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 44px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .cbslogo-xtW6tn {
+  align-items: center;
+  align-self: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 47px;
+  justify-content: flex-start;
+  margin-bottom: 8.0px;
+  margin-left: 47px;
+  min-width: 156px;
+  position: relative;
+  width: auto;
+}
+.artboard .checkbox-4gQXmO {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-B3E7EC93-D288-45E9-9938-A56C4827045A@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-7NdcoY {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-58F677D4-0C02-42EC-B860-898A6F32DFE0@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-8TPFgI {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-DF2E955E-CA2E-47F1-A306-9EDF8808C56B@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-9a83xP {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-67594D1F-7E30-4C4A-8590-C5B342229487@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-Au1Qiz {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-7D94E324-7EDD-4D94-9438-4DE842956F53@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-HHmaoQ {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-71209813-BB30-47AF-93B2-CC07B8123F55@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-KNhZKQ {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-871670BA-AF74-459C-B5B8-B005F339F17D@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-Kxp5PM {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-BB19AE31-CE87-4772-A3BB-D3401D76C808@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-N41Vfa {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-EAFCDF5A-7C04-4688-A0C0-186FDD76AA7C@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-aapQv8 {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-F97DE0F3-EFBD-465D-B6A9-397C28A3D5EE@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-dJRPSZ {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-67C134E7-A6A5-4228-847D-9F8E76D6A3EE@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-dpKshZ {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-23F45642-E1A6-4B70-858D-B6B497064CFF@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  margin-bottom: 1px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-groYLt {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-09EADA58-4E9A-4AC2-9EB6-1CF225B8F990@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-iFUsdK {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-0E8FC38B-0A2A-474E-A581-186E97DB9F9F@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-lq14nG {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-523A173F-853B-4225-91AB-02F1E880F927@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-qIDD7U {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-4AD0B1AC-98BA-499D-8A23-3731F32518CA@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-tkOJX1 {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-06C0C838-382C-410E-9F7D-F3DC9E6FB873@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  margin-top: 2px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-vDTfFD {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-9E9489A4-FD31-4AE6-8061-8B3F1E97BFBB@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-xtFNvY {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-90BCC638-9F0C-42D6-B23E-75503E7D4DBE@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checkbox-zaIrUd {
+  background-color: transparent;
+  background-image: url(./artboard-checkbox-AF680F92-D7B0-4903-8887-808B982E79D3@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.artboard .checked-8oRBpp {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 27px;
+  min-width: 135px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-9FEO5A {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 27px;
+  min-width: 135px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-2-8oRBpp {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-top: 9px;
+  min-width: 116px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-2-9FEO5A {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-top: 27px;
+  min-width: 64px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-2-e8KKWF {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-top: 9px;
+  min-width: 137px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-2-hEfNTr {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-top: 9px;
+  min-width: 87px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-8oRBpp {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 14px;
+  min-width: 135px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-9FEO5A {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-top: 14px;
+  min-width: 99px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-e8KKWF {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 14px;
+  min-width: 135px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-copy-hEfNTr {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 14px;
+  min-width: 136px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-e8KKWF {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 27px;
+  min-width: 135px;
+  position: relative;
+  width: auto;
+}
+.artboard .checked-hEfNTr {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-top: 27px;
+  min-width: 135px;
+  position: relative;
+  width: auto;
+}
+.artboard .cnn-N41Vfa {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 49px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .colorbutton-JUB5Pk {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(./artboard-surface-365827B6-6CF1-4118-9AFD-218151794F0F@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-end;
+  margin-top: 1px;
+  min-width: 201px;
+  padding: 8px 13.4px;
+  position: relative;
+  width: auto;
+}
+.artboard .coverage-a-ble-copy-2-zwGzft {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-a-ble-copy-3-gfnbP6 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-a-lable-copy-JGtnxX {
+  align-self: flex-end;
+  background-color: transparent;
+  color: var(--pale-sky);
+  flex-shrink: 0;
+  height: auto;
+  margin-right: -2px;
+  margin-top: 2px;
+  min-height: 15px;
+  min-width: 114px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-available-5fIfyM {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-available-VRXOg3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-available-VwwPST {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-available-hJskG3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-available-jWhlxN {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 2px;
+  min-height: 16px;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .coverage-available-rHkB1E {
+  background-color: transparent;
+  color: var(--pale-sky);
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 7.0px;
+  margin-top: 2px;
+  min-height: 15px;
+  min-width: 114px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .custom-dJRPSZ {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 68px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .designbuttons-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: flex-start;
+  left: 20px;
+  min-width: 878px;
+  position: absolute;
+  top: 585px;
+  width: auto;
+}
+.artboard .digital-jo-iew-1-copy-xtW6tn {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 46px;
+  margin-left: 51px;
+  margin-top: 4px;
+  position: relative;
+  width: 113px;
+}
+.artboard .digital-journal-gfnbP6 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 121px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .divider-C61RwL {
+  background-color: var(--mystic);
+  height: 1px;
+  left: 8px;
+  position: absolute;
+  top: 640px;
+  width: 910px;
+}
+.artboard .divider-DfXRl2 {
+  background-color: var(--mystic);
+  flex-shrink: 0;
+  height: 1px;
+  margin-top: 12px;
+  position: relative;
+  width: 910px;
+}
+.artboard .divider-VMr6Om {
+  background-color: var(--mystic);
+  height: 1px;
+  left: 9px;
+  position: absolute;
+  top: 83px;
+  width: 910px;
+}
+.artboard .divider-copy-2-C61RwL {
+  background-color: var(--mystic);
+  height: 1px;
+  left: 9px;
+  position: absolute;
+  top: 716px;
+  width: 910px;
+}
+.artboard .divider-copy-3-C61RwL {
+  background-color: var(--mystic);
+  height: 1px;
+  left: 8px;
+  position: absolute;
+  top: 570px;
+  width: 910px;
+}
+.artboard .divider-copy-C61RwL {
+  background-color: var(--mystic);
+  height: 1px;
+  left: 9px;
+  position: absolute;
+  top: 496px;
+  width: 910px;
+}
+.artboard .download-1-2eU7uO {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 23px;
+  position: relative;
+  width: 23px;
+}
+.artboard .download-2-Kgt1o2 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 23px;
+  position: relative;
+  width: 23px;
+}
+.artboard .download-3-HEBjiI {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 23px;
+  position: relative;
+  width: 23px;
+}
+.artboard .fast-co-groYLt {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 72px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .filter-8RDiuD {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(./artboard-surface-23320214-D190-4487-9158-1D351245F3D6@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-end;
+  min-width: 126px;
+  padding: 12px 21px;
+  position: relative;
+  width: auto;
+}
+.artboard .filter-sAOPyR {
+  background-color: transparent;
+  background-image: url(./artboard-path-9E1E0571-6E25-483E-83EB-132BBC80F8BA@2x.png);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+  height: 14px;
+  position: relative;
+  width: 16px;
+}
+.artboard .forbes-lq14nG {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 64px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .formsubmit-FHocbB {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 41px;
+  margin-right: 2.0px;
+  margin-top: 30px;
+  position: relative;
+  width: 639px;
+}
+.artboard .fox-3-xtW6tn {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 41px;
+  margin-bottom: 8.0px;
+  margin-left: 47px;
+  position: relative;
+  width: 94px;
+}
+.artboard .fox-jWhlxN {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 46px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .gamechangers-iFUsdK {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 119px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .group-3-zpjcAP {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 16px;
+  justify-content: flex-start;
+  min-width: 83px;
+  position: relative;
+  width: auto;
+}
+.artboard .ickeyboardarrowleft-9m2ZPo {
+  align-items: flex-end;
+  background-color: transparent;
+  background-image: url(./artboard-bounds-D73D08A8-2436-4833-A1F0-949599F13FBA@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-left: 27px;
+  min-width: 24px;
+  padding: 5px 8px;
+  position: relative;
+  width: auto;
+}
+.artboard .ickeyboardarrowright-9m2ZPo {
+  align-items: center;
+  background-color: transparent;
+  background-image: url(./artboard-bounds-30D68805-7C41-4D62-8C0E-E079EF37CA27@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-left: 33px;
+  min-width: 24px;
+  padding: 0 8px;
+  position: relative;
+  width: auto;
+}
+.artboard .icon-K8RTiH {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 12px;
+  opacity: 0.54;
+  position: relative;
+  width: 7px;
+}
+.artboard .icon-bSygqs {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 12px;
+  opacity: 0.54;
+  position: relative;
+  width: 7px;
+}
+.artboard .icsearch24px-LczXgX {
+  background-color: transparent;
+  background-image: url(./artboard-icsearch24px-1BDD7104-9FB0-4605-B081-982D70F02B5B@2x.png);
+  background-size: 100% 100%;
+  height: 17px;
+  left: 15px;
+  position: absolute;
+  top: 10px;
+  width: 18px;
+}
+.artboard .instafame-KNhZKQ {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 84px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .linkbutton-JUB5Pk {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(./artboard-surface-C49E5100-0E80-4A5B-B594-406A107195FE@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-end;
+  margin-left: 6px;
+  margin-top: 1px;
+  min-width: 113px;
+  padding: 9px 9.4px;
+  position: relative;
+  width: auto;
+}
+.artboard .logopackages-DfXRl2 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 41px;
+  justify-content: flex-start;
+  margin-left: 22px;
+  margin-top: 31px;
+  min-width: 723px;
+  position: relative;
+  width: auto;
+}
+.artboard .logopreview-FHocbB {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(./artboard-rectangle-5-copy-619006B9-48E6-4659-8EBE-41C1488AF4D8.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 121px;
+  justify-content: flex-start;
+  min-width: 913px;
+  padding: 28px 48px;
+  position: relative;
+  width: auto;
+}
+.artboard .logos1-IGt0D2 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 182px;
+  position: relative;
+  width: 147px;
+}
+.artboard .logos2-IGt0D2 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 51px;
+  min-height: 182px;
+  position: relative;
+  width: 137px;
+}
+.artboard .logos3-IGt0D2 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 71px;
+  min-height: 182px;
+  position: relative;
+  width: 177px;
+}
+.artboard .logos4-IGt0D2 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 56px;
+  min-height: 182px;
+  position: relative;
+  width: 135px;
+}
+.artboard .logosselect-DfXRl2 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 182px;
+  justify-content: flex-start;
+  margin-left: 22px;
+  margin-top: 22px;
+  min-width: 774px;
+  position: relative;
+  width: auto;
+}
+.artboard .market-watch-VRXOg3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 110px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .nbc-hJskG3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 47px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .nbclogo-xtW6tn {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 48px;
+  min-height: 53px;
+  position: relative;
+  width: 52px;
+}
+.artboard .not-checked-8oRBpp {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  min-width: 147px;
+  position: relative;
+  width: auto;
+}
+.artboard .not-checked-9FEO5A {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  min-width: 60px;
+  position: relative;
+  width: auto;
+}
+.artboard .not-checked-copy-2-4x5lCT {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-left: 48px;
+  min-width: 134px;
+  position: relative;
+  width: auto;
+}
+.artboard .not-checked-copy-2-GEfYbZ {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-left: 102px;
+  min-width: 83px;
+  position: relative;
+  width: auto;
+}
+.artboard .not-checked-copy-2-HFdU73 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 74px;
+  min-height: 41px;
+  position: relative;
+  width: 131px;
+}
+.artboard .not-checked-copy-2-rZF4xT {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 41px;
+  position: relative;
+  width: 151px;
+}
+.artboard .not-checked-e8KKWF {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  min-width: 79px;
+  position: relative;
+  width: auto;
+}
+.artboard .not-checked-hEfNTr {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  min-width: 177px;
+  position: relative;
+  width: auto;
+}
+.artboard .options-DfXRl2 {
+  align-items: center;
+  align-self: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-start;
+  margin-right: 5.0px;
+  min-width: 881px;
+  position: relative;
+  width: auto;
+}
+.artboard .orientatinobutton-JUB5Pk {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 48px;
+  margin-left: 6px;
+  position: relative;
+  width: 392px;
+}
+.artboard .oval-1-88x8SN {
+  background-color: transparent;
+  height: 46px;
+  left: 13px;
+  position: absolute;
+  top: 0px;
+  width: 46px;
+}
+.artboard .overlap-group-udd6xU {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 31px;
+  position: relative;
+  width: 52px;
+}
+.artboard .pagination-8RDiuD {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: flex-start;
+  margin-bottom: 2.0px;
+  margin-left: 24px;
+  min-width: 172px;
+  position: relative;
+  width: auto;
+}
+.artboard .path-TkIKzZ {
+  background-color: transparent;
+  height: 41px;
+  left: 57px;
+  position: absolute;
+  top: 0px;
+  width: 37px;
+}
+.artboard .path3003-14145S {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 47px;
+  position: relative;
+  width: 48px;
+}
+.artboard .path3005-14145S {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 40px;
+  margin-left: 1px;
+  margin-top: 1.0px;
+  position: relative;
+  width: 36px;
+}
+.artboard .path3007-14145S {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 39px;
+  margin-left: 4px;
+  position: relative;
+  width: 35px;
+}
+.artboard .path3009-14145S {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 40px;
+  margin-bottom: 1.0px;
+  margin-left: 1px;
+  position: relative;
+  width: 31px;
+}
+.artboard .path3113-YpkPcU {
+  background-color: transparent;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 52px;
+}
+.artboard .path3115-YpkPcU {
+  background-color: transparent;
+  height: 22px;
+  left: 5px;
+  position: absolute;
+  top: 7px;
+  width: 18px;
+}
+.artboard .path3117-YpkPcU {
+  background-color: transparent;
+  height: 26px;
+  left: 15px;
+  position: absolute;
+  top: 1px;
+  width: 10px;
+}
+.artboard .path3119-YpkPcU {
+  background-color: transparent;
+  height: 26px;
+  left: 27px;
+  position: absolute;
+  top: 1px;
+  width: 10px;
+}
+.artboard .path3121-YpkPcU {
+  background-color: transparent;
+  height: 22px;
+  left: 29px;
+  position: absolute;
+  top: 7px;
+  width: 18px;
+}
+.artboard .path3123-YpkPcU {
+  background-color: transparent;
+  height: 11px;
+  left: 28px;
+  position: absolute;
+  top: 20px;
+  width: 22px;
+}
+.artboard .path3125-YpkPcU {
+  background-color: transparent;
+  height: 11px;
+  left: 1px;
+  position: absolute;
+  top: 20px;
+  width: 23px;
+}
+.artboard .path3127-gABPZi {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 18px;
+  margin-left: 1px;
+  position: relative;
+  width: 12px;
+}
+.artboard .path3131-gABPZi {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 19px;
+  margin-left: 1px;
+  position: relative;
+  width: 12px;
+}
+.artboard .polygon3129-gABPZi {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 19px;
+  position: relative;
+  width: 15px;
+}
+.artboard .portlet-C61RwL {
+  background-color: transparent;
+  height: 1067px;
+  left: 5px;
+  position: absolute;
+  top: 6px;
+  width: 916px;
+}
+.artboard .previewsubmit-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 7px;
+  min-height: 314px;
+  position: absolute;
+  top: 721px;
+  width: 913px;
+}
+.artboard .ready-to-get-the-pre-FHocbB {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 0.32px;
+  margin-top: 23px;
+  min-height: 24px;
+  min-width: 441px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .rectangle-1-88x8SN {
+  background-color: rgba(255,140,140,1.0);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 6px;
+  width: 48px;
+}
+.artboard .search-for-publicati-LczXgX {
+  background-color: transparent;
+  color: rgba(158,160,165,1.0);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 48px;
+  letter-spacing: -0.05px;
+  line-height: 17px;
+  position: absolute;
+  text-align: left;
+  top: 11px;
+  white-space: nowrap;
+  width: 399px;
+}
+.artboard .searchbar-8RDiuD {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 38px;
+  margin-bottom: 2.0px;
+  margin-left: 17px;
+  position: relative;
+  width: 545px;
+}
+.artboard .selection--ff-enabled-DtJxMe {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 18px;
+  justify-content: flex-start;
+  margin-top: 3px;
+  min-width: 18px;
+  position: relative;
+  width: auto;
+}
+.artboard .selection--ff-enabled-LLqu42 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 18px;
+  justify-content: flex-start;
+  margin-top: 3px;
+  min-width: 18px;
+  position: relative;
+  width: auto;
+}
+.artboard .selection--ff-enabled-QqpZAK {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 18px;
+  justify-content: flex-start;
+  margin-top: 3px;
+  min-width: 18px;
+  position: relative;
+  width: auto;
+}
+.artboard .selection--ff-enabled-TgQWgN {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 18px;
+  justify-content: flex-start;
+  margin-top: 3px;
+  min-width: 18px;
+  position: relative;
+  width: auto;
+}
+.artboard .selection--ff-enabled-gIzkNM {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 18px;
+  justify-content: flex-start;
+  margin-top: 3px;
+  min-width: 18px;
+  position: relative;
+  width: auto;
+}
+.artboard .selection--ff-enabled-i6OEDt {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 18px;
+  justify-content: flex-start;
+  margin-top: 3px;
+  min-width: 18px;
+  position: relative;
+  width: auto;
+}
+.artboard .shape-88x8SN {
+  background-color: transparent;
+  height: 9px;
+  left: 8px;
+  position: absolute;
+  top: 14px;
+  width: 12px;
+}
+.artboard .shape-TkIKzZ {
+  background-color: transparent;
+  height: 41px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+.artboard .sizebutton-JUB5Pk {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(./artboard-surface-A459362E-47AC-49C6-98F9-CC2546571C5B@2x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 42px;
+  justify-content: flex-end;
+  margin-left: 6px;
+  margin-top: 1px;
+  min-width: 154px;
+  padding: 9px 11.4px;
+  position: relative;
+  width: auto;
+}
+.artboard .starter-coverage-qIDD7U {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 10px;
+  min-height: 24px;
+  min-width: 135px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .step-1-build-it-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  position: absolute;
+  text-align: left;
+  top: 35px;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .step-2-design-it-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  position: absolute;
+  text-align: left;
+  top: 521px;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .step-3-get-it-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  position: absolute;
+  text-align: left;
+  top: 665px;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .surface-YCQTN0 {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 392px;
+}
+.artboard .tech-crunch-Au1Qiz {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 101px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .text-input-myOykg {
+  align-items: center;
+  background-color: rgba(246,246,246,0.5);
+  border: 2px solid rgba(216,221,230,1.0);
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 41px;
+  justify-content: flex-start;
+  min-width: 639px;
+  padding: 0 14px;
+  position: relative;
+  width: auto;
+}
+.artboard .text-input-ohgdsz {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 41px;
+  justify-content: flex-start;
+  left: 0px;
+  min-width: 639px;
+  position: absolute;
+  top: 0px;
+  width: auto;
+}
+.artboard .the-cw-zwGzft {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 24px;
+  min-width: 72px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .the-economist-dpKshZ {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 122px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .the-new-york-times-7NdcoY {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 162px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .toggle-YCQTN0 {
+  background-color: transparent;
+  height: 46px;
+  left: 189px;
+  position: absolute;
+  top: 2px;
+  width: 59px;
+}
+.artboard .we-will-deliver-it-s-FHocbB {
+  background-color: transparent;
+  color: var(--ebony-clay);
+  flex-shrink: 0;
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.22px;
+  line-height: 20px;
+  margin-right: 1.0px;
+  margin-top: 15px;
+  min-height: 40px;
+  opacity: 0.6;
+  position: relative;
+  text-align: center;
+  width: 378px;
+}
+.artboard .wsj-xtFNvY {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 9px;
+  min-height: 24px;
+  min-width: 45px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .x1-16-of-100-9m2ZPo {
+  background-color: transparent;
+  color: rgba(0,0,0,1.0);
+  flex-shrink: 0;
+  height: auto;
+  margin-top: 1.0px;
+  min-height: 15px;
+  min-width: 74px;
+  opacity: 0.54;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .x1220-e6TCkr {
+  background-color: transparent;
+  color: rgba(255,255,255,1.0);
+  flex-shrink: 0;
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.19px;
+  line-height: 15px;
+  min-height: 15px;
+  min-width: 186px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.artboard .your-email-AZOJmS {
+  background-color: transparent;
+  color: rgba(202,202,202,1.0);
+  flex-shrink: 0;
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.22px;
+  line-height: 17px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 278px;
+}
+.font-class-1 {
+  color: var(--black);
+  font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+}
+.font-class-2 {
+  color: var(--ship-gray);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+}
+.font-class-3 {
+  color: var(--pale-sky);
+  font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.font-class-4 {
+  color: var(--ebony-clay);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+}
+.font-class-5 {
+  color: var(--black);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+}
+.font-class-6 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --ebony-clay: rgba(32,49,60,1.0);
+  --mystic: rgba(227,231,234,1.0);
+  --pale-sky: rgba(101,120,137,1.0);
+  --ship-gray: rgba(57,59,63,1.0);
+}</style>
+    
+    
+    
+    <meta name="author" content="AnimaApp.com - Design to code, Automated.">
+</head>
+<body style="margin: 0;background: rgba(255,255,255,1.0);">
+<input type="hidden" id="anPageName" name="page" value="artboard"/>
+
+    <div class="anima-container-center-horizontal">
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="artboard anima-screen " 
+
+>
+    <img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="portlet-C61RwL" 
+
+ 
+src="./artboard-portlet-94DEBAEC-52F5-4F6C-BD0A-89DAAE6DD333.png"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="previewsubmit-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logopreview-FHocbB" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="as-seen-in-xtW6tn" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        As seen in
+    
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="american-b--logo-copy-xtW6tn" 
+
+ 
+src="./artboard-americanbroadcastingcompanylogo-copy-A25EA738-E384-4111-BA35-3FD098B539C1.png"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="fox-3-xtW6tn" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path-TkIKzZ" 
+
+ 
+src="./artboard-path-ED412776-CA93-4BE3-945E-C47ADC0A1E6A@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="shape-TkIKzZ" 
+
+ 
+src="./artboard-shape-E2B9CB39-677D-4E17-916A-5241C1A58F57@2x.png"
+/>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="nbclogo-xtW6tn" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="overlap-group-udd6xU" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3113-YpkPcU" 
+
+ 
+src="./artboard-path3113-08CC20CD-7583-4552-B685-E7A52906670D@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3115-YpkPcU" 
+
+ 
+src="./artboard-path3115-4C35823D-C539-4B79-8FA7-B5621330E3DF@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3117-YpkPcU" 
+
+ 
+src="./artboard-path3117-637A9195-5E8D-48A8-921C-FD30D7196CB7@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3119-YpkPcU" 
+
+ 
+src="./artboard-path3119-87F1B6F7-455D-40C7-A8A8-77705284D61B@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3121-YpkPcU" 
+
+ 
+src="./artboard-path3121-8B9C14CA-4981-4C07-9F5C-3E6DE3B1AAE5@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3123-YpkPcU" 
+
+ 
+src="./artboard-path3123-37CB1269-24E6-4001-86B8-EA6A183C33F4@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3125-YpkPcU" 
+
+ 
+src="./artboard-path3125-E4617A99-85CB-4464-B293-A7B5FA4C4137@2x.png"
+/>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex-udd6xU" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="polygon3129-gABPZi" 
+
+ 
+src="./artboard-polygon3129-58AF10C9-6D89-494D-B2E2-4C3757682756@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3127-gABPZi" 
+
+ 
+src="./artboard-path3127-82F8C1EA-FBA5-44DD-9EEC-44A6240EA027@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3131-gABPZi" 
+
+ 
+src="./artboard-path3131-66927BD9-3B67-4B1A-B9E3-13FA949C845D@2x.png"
+/>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="cbslogo-xtW6tn" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3003-14145S" 
+
+ 
+src="./artboard-path3003-79D5FC41-ADE1-46EB-B493-17330E869115@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3005-14145S" 
+
+ 
+src="./artboard-path3005-0D2DFD18-D11D-40AB-91B8-4292FFB059BA@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3007-14145S" 
+
+ 
+src="./artboard-path3007-7B9DF77E-7908-443E-9043-A9A6048CD381@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="path3009-14145S" 
+
+ 
+src="./artboard-path3009-FACCA6CB-442D-4962-91D5-201CE69A0735@2x.png"
+/>
+</div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="digital-jo-iew-1-copy-xtW6tn" 
+
+ 
+src="./artboard-digital-journal-logo-removebg-preview-1-copy-BADD4AE5-61CA-4A35-AF1A-162A8103CC3B.png"
+/>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="ready-to-get-the-pre-FHocbB font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Ready to get the press module of your dreams?
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="we-will-deliver-it-s-FHocbB" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        We will deliver it straight to your inbox, along with detailed instructions on how to embed it on your website
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="formsubmit-FHocbB" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="text-input-ohgdsz" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="text-input-myOykg" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="your-email-AZOJmS" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Your best email
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-alternative-ohgdsz" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-ZdCe8m" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="x1220-e6TCkr" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SEND ME MY PRESS MODULE!
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="divider-copy-2-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-C61RwL font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        PREVIEW:
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="step-3-get-it-C61RwL font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Step 3: Get it
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="divider-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="divider-copy-3-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="designbuttons-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="colorbutton-JUB5Pk" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="download-1-2eU7uO" 
+
+ 
+src="./artboard-download-1-EC6DE63A-CD29-46FE-A85E-6301794C5FCA@2x.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-2eU7uO font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        COLOR / OPACITY
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="sizebutton-JUB5Pk" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="download-2-Kgt1o2" 
+
+ 
+src="./artboard-download-2-773273DE-29B4-430F-94EC-0C67B1371726@2x.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-Kgt1o2 font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        LOGO SIZE
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="linkbutton-JUB5Pk" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="download-3-HEBjiI" 
+
+ 
+src="./artboard-download-3-7190C32F-E6B8-49B3-9608-6BCBED52D6A5@2x.png"
+/>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-HEBjiI font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        LINKS
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="orientatinobutton-JUB5Pk" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="surface-YCQTN0" 
+
+ 
+src="./artboard-surface-58D79045-14BB-4558-9517-DE9705E38C5E.png"
+/>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="toggle-YCQTN0" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="rectangle-1-88x8SN" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="oval-1-88x8SN" 
+
+ 
+src="./artboard-oval-1-D61A10F4-25CB-44B1-AE45-F6E3EE110EE5@2x.png"
+/>
+<img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="shape-88x8SN" 
+
+ 
+src="./artboard-shape-2D7FACC3-6ECB-4A8D-B208-8DCC79A0E963@2x.png"
+/>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-YCQTN0 font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        HORIZONTAL SCROLL 
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-JR0iyY font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        VERTICAL STACK
+    
+</div>
+</div>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="step-2-design-it-C61RwL font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Step 2: Design it
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="divider-copy-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="buildsection-C61RwL" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="options-DfXRl2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="filter-8RDiuD" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="group-3-zpjcAP" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="filter-sAOPyR" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-sAOPyR font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        FILTER
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="searchbar-8RDiuD" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="search-for-publicati-LczXgX" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Search for publication logo
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="card-copy-LczXgX" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="icsearch24px-LczXgX" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="pagination-8RDiuD" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="x1-16-of-100-9m2ZPo font-class-6" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        1-16 of 100
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="ickeyboardarrowleft-9m2ZPo" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="icon-K8RTiH" 
+
+ 
+src="./artboard-icon-20AF0E12-3F76-4714-AD94-978085AFEBB7@2x.png"
+/>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="ickeyboardarrowright-9m2ZPo" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+><img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="icon-bSygqs" 
+
+ 
+src="./artboard-icon-1487B805-437E-40E9-B3DA-1EA8F1E61D3D@2x.png"
+/>
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="divider-DfXRl2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logosselect-DfXRl2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logos1-IGt0D2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-8oRBpp" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-zaIrUd" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="business-insider-zaIrUd font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Business Insider
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-8oRBpp" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="selection--ff-enabled-gIzkNM" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-4gQXmO" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex-gIzkNM" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="abc-VwwPST font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ABC
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-available-VwwPST font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-8oRBpp" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="selection--ff-enabled-i6OEDt" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-aapQv8" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex1-i6OEDt" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="the-cw-zwGzft font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The CW
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-a-ble-copy-2-zwGzft font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-2-8oRBpp" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-Au1Qiz" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="tech-crunch-Au1Qiz font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        TechCrunch
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logos2-IGt0D2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-e8KKWF" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-lq14nG" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="forbes-lq14nG font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Forbes
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-e8KKWF" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-tkOJX1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex-tkOJX1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="market-watch-VRXOg3 font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        MarketWatch
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-available-VRXOg3 font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-e8KKWF" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="selection--ff-enabled-QqpZAK" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-9a83xP" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex1-QqpZAK" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="fox-jWhlxN font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        FOX
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-available-jWhlxN font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-2-e8KKWF" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-dpKshZ" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="the-economist-dpKshZ font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The Economist
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logos3-IGt0D2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-hEfNTr" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-7NdcoY" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="the-new-york-times-7NdcoY font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The New York Times
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-hEfNTr" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="selection--ff-enabled-TgQWgN" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-Kxp5PM" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex-TgQWgN" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="nbc-hJskG3 font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        NBC
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-available-hJskG3 font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-hEfNTr" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="selection--ff-enabled-LLqu42" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-vDTfFD" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex1-LLqu42" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="digital-journal-gfnbP6 font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Digital Journal
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-a-ble-copy-3-gfnbP6 font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-2-hEfNTr" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-groYLt" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="fast-co-groYLt font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Fast Co.
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logos4-IGt0D2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-9FEO5A" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-xtFNvY" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="wsj-xtFNvY font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WSJ
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-9FEO5A" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="selection--ff-enabled-DtJxMe" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-HHmaoQ" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex-DtJxMe" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="cbs-5fIfyM font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        CBS
+    
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-available-5fIfyM font-class-3" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-9FEO5A" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-8TPFgI" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="buzz-feed-8TPFgI font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        BuzzFeed
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checked-copy-2-9FEO5A" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-N41Vfa" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="cnn-N41Vfa font-class-1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        CNN
+    
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="button-text-DfXRl2 font-class-2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        OR SELECT A PREMADE PACKAGE
+    
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="logopackages-DfXRl2" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-copy-2-rZF4xT" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex-rHkB1E" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-qIDD7U" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="starter-coverage-qIDD7U font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Starter Coverage
+    
+</div>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-available-rHkB1E font-class-6" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-copy-2-4x5lCT" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-iFUsdK" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="gamechangers-iFUsdK font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Gamechangers
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-copy-2-HFdU73" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="auto-flex1-JGtnxX" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-KNhZKQ" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="instafame-KNhZKQ font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Instafame
+    
+</div>
+</div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="coverage-a-lable-copy-JGtnxX font-class-6" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Coverage Available
+    
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="not-checked-copy-2-GEfYbZ" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="checkbox-dJRPSZ" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="custom-dJRPSZ font-class-5" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Custom
+    
+</div>
+</div>
+</div>
+</div>
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="divider-VMr6Om" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+></div>
+
+
+
+<div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class="step-1-build-it-C61RwL font-class-4" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Step 1: Build it
+    
+</div>
+
+ </div>
+    </div>
+    
+    <!-- V 9b61067 Wed Nov 11 13:35:55 UTC 2020 -->
+</body>
+</html>

@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/legitimatorpressmodulebuilder.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+      .anima-component-wrapper a,
+      .anima-screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .anima-full-width-a {
+        width: 100%;
+      }
+
+      .anima-full-height-a {
+        height: 100%;
+      }
+
+      .anima-screen textarea:focus,
+      .anima-screen input:focus {
+        outline: none;
+      }
+
+      .anima-screen *,
+      .anima-component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .anima-screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .anima-container-center-vertical,
+      .anima-container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .anima-container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .anima-container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .anima-container-center-vertical > *,
+      .anima-container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .anima-component-wrapper,
+      .anima-screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .anima-auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --anima-z-index: -1;
+      }
+
+      .anima-auto-animated .anima-container-center-vertical,
+      .anima-auto-animated .anima-container-center-horizontal {
+        opacity: 1;
+      }
+
+      .anima-overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+#myInput {
+  background-image: url('img/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 60px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+      .anima-animate-appear {
+        opacity: 0;
+        display: block;
+        animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .anima-animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .anima-animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes anima-reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .anima-valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .anima-valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .anima-component-wrapper,
+      .anima-component-wrapper * {
+        pointer-events: none;
+      }
+
+      .anima-component-wrapper a *,
+      .anima-component-wrapper a,
+      .anima-component-wrapper input,
+      .anima-component-wrapper video,
+      .anima-component-wrapper iframe,
+      .anima-listeners-active,
+      .anima-listeners-active * {
+        pointer-events: auto;
+      }
+
+      .anima-hidden,
+      .anima-hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+      HTML CSS JSResult
+EDIT ON
+.container {
+  max-width: 400px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev {
+  left: 5px;
+}
+
+
+
+      .anima-smart-layers-pointers,
+      .anima-smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .anima-component-wrapper.anima-not-ready,
+      .anima-component-wrapper.anima-not-ready * {
+        visibility: hidden !important;
+      }
+
+      .anima-listeners-active-click,
+      .anima-listeners-active-click * {
+        cursor: pointer;
+      }
+      #o12{
+          width: auto;
+  height: auto;
+  margin-left: 150px;
+  padding: 25px;
+   width: 750px;
+  height: 100px;
+  position: relative;
+  overflow-y: scroll;
+      }
+       #color{
+        border-radius: 50%;
+        margin:10px;
+        width:30px;
+      } 
+      #hvlist{
+        border: none;
+background: none;
+      }
+      #hvlist:active{
+    border: none;
+  background:none;
+  outline:none;
+ 
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  left:132;
+  color:pink
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 14px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="legitimatorpressmodulebuilder" />
+    <div class="anima-container-center-horizontal">
+      <div class="legitimatorpressmodulebuilder anima-screen" style="max-width:100%;height:auto;">
+        <img
+          class="portlet-C61RwL"
+          src="img/legitimator-press-module-builder-portlet-B24BCBB1-AB3F-4D03-9269-B3AE0C472357.png"
+        />
+        <div class="previewsubmit-C61RwL">
+          <div class="logopreview-FHocbB">
+         
+            <img
+              class="asseenin-xtW6tn"
+              src="img/legitimator-press-module-builder-asseenin-975B8024-9811-4E19-8139-1CA69A6B1DAF@2x.png"
+            />
+        <div  id="o12">
+            
+            </div>
+  
+          </div>
+
+          <div class="formsubmit-FHocbB">
+            <div class="text-input-ohgdsz">
+              <div class="text-input-myOykg" ></divs>
+                <div  id="oc" onclick="this.focus();this.select()" readonly="readonly"></div>
+               
+
+              </div>
+            </div>
+        
+
+            <div class="button-alternative-ohgdsz">
+              <div class="button-ZdCe8m">
+                <div class="x1220-e6TCkr" onclick="send()">COPY YOR PRESS MODULE!</div>
+              </div>
+            </div>
+          </div>
+         
+
+          <h2 class="ready-to-get-the-pre-FHocbB font-class-4">Get the press module of your dreams?</h2>
+        </div>
+        <div class="divider-copy-2-C61RwL"></div>
+     
+        <div class="step-3-get-it-C61RwL font-class-4"> Preview</div>
+        <div class="divider-C61RwL"></div>
+        <div class="divider-copy-3-C61RwL"></div>
+        <div class="designbuttons-C61RwL">
+          <div class="colorbutton-JUB5Pk"><span> 
+         <input type="color"
+            id="color" onclick="on()">
+            <label for="color" class="button-text-2eU7uO font-class-2">COLOR / OPACITY
+              </label>
+
+          </div>
+          <div class="sizebutton-JUB5Pk">
+            <img
+              class="download-2-Kgt1o2"
+              src="img/legitimator-press-module-builder-download-2-92CCF1A5-738F-4CC9-BF22-06BDA46E942B@2x.png"
+            />
+            <div id="hide"><input id="mysSlider"type="range" name="rangeInput" min="0" max="100" onchange="resizeImage();"></div>
+            <div>
+            <label id="ls"class="button-text-Kgt1o2 font-class-2">LOGO SIZE</label></div>
+            </div>
+          </label>
+          
+          <div  class="orientatinobutton-JUB5Pk" >
+            <img 
+              class="surface-YCQTN0" width="150px" 
+              src="img/legitimator-press-module-builder-surface-65A85FD5-C202-4FE2-86CC-9A258887AB3B.png"
+            />
+            <div class="toggle-YCQTN0">
+              <div class=""></div>
+              
+              <label class="switch">
+  <input id="hvlist" type="checkbox" checked  >
+  <span class="slider round"></span>
+</label>
+            </div>
+            <div class="button-text-YCQTN0 font-class-2" >VERTICAL STACK</div>
+            <div class="button-text-JR0iyY font-class-2">HORIZONTAL SCROLL</div>
+          </div>
+        </div>
+        <div class="step-2-design-it-C61RwL font-class-4"> Design</div>
+        <div class="divider-copy-C61RwL"></div>
+       <div class="w3-content w3-display-container">
+  
+   <div class="buildsection-C61RwL"  >
+         
+      <div class="logopackages-DfXRl2">
+            <div class="not-checked-copy-2-rZF4xT">
+            <div class="ps">
+              <input name="prpa" type="radio" id="psc" class="checkbox-rHkB1E"/><label for="psc">
+              <span class="starter-coverage-rHkB1E font-class-5">Starter Coverage</span></label>
+              <div class="coverage-available-rHkB1E font-class-6">Coverage Available</div>
+            </div>
+            <div class="not-checked-copy-2-4x5lCT">
+              <input type="radio"name="prpa"  id="pgc"class="checkbox-iFUsdK"/><label  for="pgc">
+              <span class="gamechangers-iFUsdK font-class-5">Gamechangers</span></label>
+            </div>
+            <div class="not-checked-copy-2-HFdU73">
+              
+                <input class="checkbox-JGtnxX" type="radio" name="prpa"  id="pif"/>
+                <label for="pif"> <span class="instafame-JGtnxX font-class-5">Instafame</span></label>
+              <div class="coverage-a-lable-copy-JGtnxX font-class-6">Coverage Available</div>
+              
+             
+            </div>
+
+            <div class="not-checked-copy-2-GEfYbZ">
+              <input class="checkbox-dJRPSZ" name="prpa" type="radio" id="pcus"/><label for="pcus">
+              <span class="custom-dJRPSZ font-class-5">Custom</span></label>
+            </div>
+          </div></div><!---->
+          <div class="button-text-DfXRl2 font-class-2">OR SELECT A PREMADE PACKAGE</div>
+         <div class="logosselect-DfXRl2" id="publishedl" >
+           <div class="mySlides">
+            <div class="logos1-IGt0D2">
+             
+              <div class="not-checked-8oRBpp">
+                <input id="bi" value="Business Insider"type="checkbox"class="checkbox-zaIrUd"/><label for="bi">
+                <span class="business-insider-zaIrUd font-class-1">Business Insider</span></label>
+              </div>
+              <div class="checked-8oRBpp">
+                <input id="abc" value="abc"type="checkbox" class="checkbox-4gQXmO"/><label for="abc"><span class="abc-gIzkNM font-class-1">ABC</span></label>
+               
+                <div class="coverage-available-gIzkNM font-class-3">Coverage Available</div>
+              </div>
+              <div class="checked-copy-8oRBpp">
+                <input id="cw" type="checkbox" class="checkbox-4gQXmO"/>
+                <label for="cw">
+                <span class="the-cw-i6OEDt font-class-1">The CW</span></label>
+                
+                <div class="coverage-a-ble-copy-2-i6OEDt font-class-3">Coverage Available</div>
+              </div>
+              
+            </div>
+            <div class="logos2-IGt0D2">
+              <div class="not-checked-e8KKWF">
+                <input id="fo" type="checkbox" class="checkbox-4gQXmO"/>
+                <label for="fo">
+                <span class="forbes-lq14nG font-class-1">Forbes</span></label>
+              </div>
+              <div class="checked-e8KKWF">
+                  <input id="tc" type="checkbox" class="checkbox-4gQXmO"/>
+                     <label for="tc">
+                <span class="tech-crunch-Au1Qiz font-class-1">TechCrunch</span></label>
+               
+              </div>
+             
+              <div class="checked-copy-e8KKWF">
+                  <input id="fx" type="checkbox" class="checkbox-4gQXmO"/>
+                     <label for="fx">
+                <span class="fox-QqpZAK font-class-1">FOX</span></label>
+                <div>
+                 
+                </div>
+                <div class="coverage-available-QqpZAK font-class-3">Coverage Available</div>
+              </div>
+             
+            </div>
+            <div class="logos3-IGt0D2">
+              <div class="not-checked-hEfNTr">
+                   <input id="nyt" type="checkbox" class="checkbox-4gQXmO"/>
+              <label for="nyt">
+                <div class="the-new-york-times-7NdcoY font-class-1">The New York Times</div></label>
+              </div>
+              <div class="checked-hEfNTr">
+                    <input id="nbc" type="checkbox" class="checkbox-4gQXmO"/><label for="nbc">
+                <span class="nbc-TgQWgN font-class-1">NBC</span></label>
+                <div class="selection--ff-enabled-TgQWgN">
+             
+                </div>
+                <div class="coverage-available-TgQWgN font-class-3">Coverage Available</div>
+              </div>
+              <div class="checked-copy-hEfNTr">
+                  <input id="dj" type="checkbox" class="checkbox-4gQXmO"/><label for="dj">
+                <div class="digital-journal-LLqu42 font-class-1">Digital Journal</div></label>
+                <div class="selection--ff-enabled-LLqu42">
+                 
+                </div>
+                <div class="coverage-a-ble-copy-3-LLqu42 font-class-3">Coverage Available</div>
+              </div>
+              
+            </div>
+            <div class="logos4-IGt0D2">
+             
+             
+             
+            
+            </div>
+          </div>
+        <div class="mySlides">
+            <div class="logos1-IGt0D2">
+             
+              <div class="not-checked-9FEO5A">
+              
+                  <input id="wsj" type="checkbox" class="checkbox-4gQXmO"/><label for="wsj">
+                <div class="wsj-xtFNvY font-class-1">WSJ</div></label>
+              </div>
+              <div class="checked-9FEO5A">
+                <input id="cbs" type="checkbox" class="checkbox-4gQXmO"/><label for="cbs">
+                <div class="cbs-DtJxMe font-class-1">CBS</div></label>
+                <div class="selection--ff-enabled-DtJxMe">
+            
+                </div>
+                <div class="coverage-available-DtJxMe font-class-3">Coverage Available</div>
+              </div>
+              <div class="checked-copy-9FEO5A">
+                <input id="bf" type="checkbox" class="checkbox-4gQXmO"/><label for="bf">
+                <div class="buzz-feed-8TPFgI font-class-1">BuzzFeed</div></label>
+                <div ></div>
+              </div>
+              
+              
+            
+              
+            </div>
+            <div class="logos2-IGt0D2">
+              
+              
+             
+              
+            </div>
+            <div class="logos3-IGt0D2">
+              
+             
+              
+             
+            </div>
+           
+            </div>
+          </div>
+          <div class="divider-DfXRl2"></div>
+         
+      
+       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." >
+
+              
+          
+            <div class="pagination-8RDiuD">
+              <div class="ickeyboardarrowright-9m2ZPo">
+                <img id="fqq"onclick="plusDivs(1)"
+                  class="icon-bSygqs"
+                  src="img/legitimator-press-module-builder-icon-9824AA11-B1BE-4424-96D7-35A6E54E8251@2x.png"
+                />
+              </div>
+              <div class="ickeyboardarrowleft-9m2ZPo">
+                <img id="bqq"onclick="plusDivs(-1)"
+                  class="icon-K8RTiH"
+                  src="img/legitimator-press-module-builder-icon-4BB45346-B5F4-469B-B0D5-FBB21E4E3721@2x.png"
+                />
+              </div>
+              <div id="12a"class="x1-16-of-100-9m2ZPo font-class-6">1-2</div>
+              <div class="x1-16-of-100-9m2ZPo font-class-6 " ><div id="azx">2-2</div>
+            </div></div>
+          </div>
+    
+
+
+</div>
+        <div class="divider-VMr6Om"></div>
+        <div class="step-1-build-it-C61RwL font-class-4"> Build</div>
+      </div>
+
+    </div>
+ 
+
+
+    <script src="jquery.min.js"></script>
+<script src="code.min.js"></script>
+
+    <script>
+      code.init();
+    </script>
+
+<script>
+
+
+</script>
+
+
+      
+  </body>
+</html>
